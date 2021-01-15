@@ -5,7 +5,9 @@ Template 2106 Soft Landing
 http://www.tooplate.com/view/2106-soft-landing
 	
 */
- 
+
+  {% load static %}
+
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
 
   body {
@@ -311,7 +313,7 @@ http://www.tooplate.com/view/2106-soft-landing
   -----------------------------------------*/
 
   #home {
-    background: url('../images/home-bg.jpg') no-repeat center center;
+    background: url({% static '../images/home-bg.jpg' %}) no-repeat center center;
     background-size: cover;
     vertical-align: middle;
     display: -webkit-box;
@@ -494,7 +496,7 @@ http://www.tooplate.com/view/2106-soft-landing
   }
 
   .testimonial-image {
-    background: url('../images/testimonial-image.jpg') no-repeat center center;
+    background: url({% static '../images/testimonial-image.jpg' %}) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 65vh;
