@@ -1,1 +1,1 @@
-web: manage.py runserver
+"web: gunicorn solar.wsgi --log-file -" 
