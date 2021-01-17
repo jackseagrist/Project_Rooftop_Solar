@@ -1,1 +1,1 @@
-"web: gunicorn solar.wsgi --log-file -" 
+web: gunicorn solar.wsgi
