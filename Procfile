@@ -1,1 +1,1 @@
-web: gunicorn solar.wsgi
+web: gunicorn project-sunroof.wsgi --log-file -
