@@ -1,1 +1,1 @@
-web: gunicorn project-sunroof.wsgi --log-file -
+web: gunicorn app:app --log-file=-
