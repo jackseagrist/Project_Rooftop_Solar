@@ -1,0 +1,79 @@
+<!doctype html>
+{% load static %}
+<title>Solar Project</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header {
+      background-image: {% static "/images/home-bg.jpg" %};
+      background-size: cover;
+      height: 20vh;
+  }
+  header, footer, article, nav {
+    padding: 1em;
+  }
+  .header2{
+      position: relative;
+      background-image: url({% static "images/home-bg.jpg"%});
+      background-size: contain;
+      background-size:cover;
+      background-position:center;
+      padding-top:80px;
+      background-repeat: no-repeat
+  }
+  .header2-inside{
+      position:relative;
+      filter: grayscale(0%);
+  }
+  #container {
+    position: relative;
+    margin: -30px auto 0 auto;
+    top: 50%;
+}
+}
+
+</style>
+<body>
+  <div class="col-2">
+      <div class="header2">
+          <div class="header2-inside">
+              <header>
+                  <h1 style="font-family:Calibri;text-align:center;color:#eb702d;"> Rooftop Solar Project</h1>
+                  <h2 style="text-align:center"><a href="https://www.jackseagrist.com/projects" style="font-family:Calibri;text-align:center;color:#eb702d;text-decoration:none;">Return to Projects</a></h2>
+              </header>
+          </div>
+      </div>
+
+
+    <main>
+        <center><iframe src="https://public.tableau.com/views/Project_Sunroof_Solar_Analysis/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link&publish=no&:showVizHome=no" width="1004" height="1269" frameborder="0"></iframe></center>
+    </main>
+
+      <h2 style="text-align:center;vertical-align:top;font-family:Calibri">Data obtained for this analysis comes from Google's <a href="https://www.google.com/get/sunroof">Project Sunroof</a></h2>
+
+  </div>
+</body>
